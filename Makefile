@@ -39,6 +39,7 @@ tools:
 		--volume ${HOME}/.terraform.d:/root/.terraform.d \
 		--volume homelab-tools-cache:/root/.cache \
 		--volume homelab-tools-nix:/nix \
+		--user "$(shell id -u ${USER}):$(shell id -g ${USER})" \ 
 		--workdir $(shell pwd) \
 		nixos/nix nix-shell
 
