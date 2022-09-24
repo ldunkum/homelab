@@ -6,4 +6,3 @@ metal:
     workers:
       hosts:
         metal1: {ansible_host: 192.168.178.68, mac: '00:23:24:CA:A0:9B', disk: sda, network_interface: eno1}
-
