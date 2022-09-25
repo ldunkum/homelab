@@ -10,6 +10,8 @@ hajimari:
       annotations:
         cert-manager.io/cluster-issuer: letsencrypt-prod
         hajimari.io/enable: 'false'
+        external-dns.alpha.kubernetes.io/target: "homelab-tunnel.dunkum.eu"
+        external-dns.alpha.kubernetes.io/cloudflare-proxied: "true"
       hosts:
         - host: &host home.dunkum.eu
           paths:
