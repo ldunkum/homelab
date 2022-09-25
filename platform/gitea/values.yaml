@@ -17,7 +17,8 @@ gitea:
           - *host
   service:
     http:
-     nodePort: 34328
+      type: NodePort
+      oort: 34328
   gitea:
     admin:
       existingSecret: gitea-admin-secret
