@@ -15,6 +15,9 @@ gitea:
       - secretName: gitea-tls-certificate
         hosts:
           - *host
+  service:
+    http:
+     nodePort: 34328
   gitea:
     admin:
       existingSecret: gitea-admin-secret
