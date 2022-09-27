@@ -1,7 +1,7 @@
 #!/bin/sh
 
-#VALUES="values.yaml"
-VALUES="values-seed.yaml"
+VALUES="values.yaml"
+#VALUES="values-seed.yaml"
 
 
 curl -fks --connect-timeout 5 https://git.dunkum.eu \
