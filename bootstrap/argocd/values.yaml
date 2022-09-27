@@ -32,9 +32,9 @@ argo-cd:
         - secretName: argocd-tls-certificate
           hosts:
             - *host
-    service:
-      type: NodePort
-      nodePortHttp: 30080
+    # service:
+    #   type: NodePort
+    #   nodePortHttp: 30080
     metrics: &metrics
       enabled: true
       serviceMonitor:
