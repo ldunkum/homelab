@@ -9,35 +9,35 @@
 ## @param global.storageClass Global StorageClass for Persistent Volume(s)
 ##
 global:
-  imageRegistry: ""
+  #imageRegistry: ""
   ## E.g.
   ## imagePullSecrets:
   ##   - myRegistryKeySecretName
   ##
   imagePullSecrets: []
-  storageClass: ""
+  storageClass: "longhorn"
 
 ## @section Common parameters
 ##
 
 ## @param kubeVersion Force target Kubernetes version (using Helm capabilities if not set)
 ##
-kubeVersion: ""
+#kubeVersion: ""
 ## @param nameOverride String to partially override keycloak.fullname
 ##
-nameOverride: ""
+#nameOverride: ""
 ## @param fullnameOverride String to fully override keycloak.fullname
 ##
-fullnameOverride: ""
+#fullnameOverride: ""
 ## @param namespaceOverride String to fully override common.names.namespace
 ##
-namespaceOverride: ""
+#namespaceOverride: "keycloak"
 ## @param commonLabels Labels to add to all deployed objects
 ##
-commonLabels: {}
+#commonLabels: {}
 ## @param commonAnnotations Annotations to add to all deployed objects
 ##
-commonAnnotations: {}
+#commonAnnotations: {}
 ## @param clusterDomain Default Kubernetes cluster domain
 ##
 clusterDomain: cluster.local
