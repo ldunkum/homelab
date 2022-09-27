@@ -4,7 +4,7 @@ longhorn:
   persistence:
     # If you have three or more nodes for storage, use 3; otherwise use 2
     defaultClassReplicaCount: 2  # TODO run DR test to see if we actually need 3
-  service:
-    ui:
-      type: NodePort
-      nodePort: 33378
+  #service:
+  #  ui:
+  #    type: NodePort
+  #    nodePort: 33378
