@@ -1,10 +1,8 @@
 #!/bin/sh
 
 VALUES="values.yaml"
-#VALUES="values-seed.yaml"
 
-
-curl -fks --connect-timeout 5 https://git.dunkum.eu \
+kubectl get ingress gitea --namespace gitea \
     || VALUES="values-seed.yaml"
 
 helm template \
