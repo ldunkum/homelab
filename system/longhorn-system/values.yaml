@@ -1,4 +1,6 @@
 longhorn:
+  csi:
+    kubeletRootDir: /var/lib/kubelet
   defaultSettings:
     nodeDownPodDeletionPolicy: delete-both-statefulset-and-deployment-pod
   persistence:
